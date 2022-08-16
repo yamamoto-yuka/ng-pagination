@@ -1,10 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { CommonService } from './services/common.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
-export class AppComponent {
-  title = 'pagination';
+export class AppComponent implements OnInit {
+  constructor(private cs: CommonService) {}
+
+
+
+
+  ngOnInit(): void {
+
+  }
 }

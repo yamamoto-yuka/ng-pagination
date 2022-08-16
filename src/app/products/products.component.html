@@ -1,0 +1,7 @@
+<h1>Products</h1>
+<div *ngFor="let product of products"> 
+  {{product.attributes.product_name}}
+</div>
+
+<button (click)="loadMore()" *ngIf="showLoadbtn">Load more...</button>
+<div *ngIf="!showLoadbtn">No more data to load</div>
